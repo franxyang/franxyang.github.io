@@ -1,10 +1,7 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
+# This config file is meant for settings that affect your entire site.
+# If you change this file, please restart the server process.
 
 # Basic Site Settings
 locale                   : "en-US"
@@ -14,13 +11,11 @@ title_separator          : "-"
 name                     : &name "Yifan YANG"
 description              : &description "personal description"
 url                      : https://franxyang.github.io/
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : ""  # e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-# If a field is blank the icon and link will not appear.
+# Site Author
 author:
-  # Biographic information
   avatar           : "profile2.png"
   name             : "Frank Yifan YANG"
   pronouns         : "he/him"  
@@ -29,8 +24,6 @@ author:
   employer         : "University of Wisconsin, Madison"
   uri              : 
   email            : 
-
-  # Academic websites
   arxiv            : 
   googlescholar    : 
   impactstory      : 
@@ -39,16 +32,12 @@ author:
   pubmed           : 
   researchgate     : 
   scopus           : 
-
-  # Repositories and software development
   bitbucket        : 
   codepen          : 
   dribbble         : 
   github           : 
   kaggle           : 
   stackoverflow    : 
-
-  # Social media
   bluesky          : 
   facebook         : 
   flickr           : 
@@ -74,16 +63,6 @@ author:
   youtube          : 
   zhihu            : 
 
-# Publication Category (暫時隱藏)
-# publication_category:
-#   books:
-#     title: 'Books'
-#   manuscripts:
-#     title: 'Journal Articles'    
-#   conferences:
-#     title: 'Conference Papers'
-
-# Site Settings
 teaser                   : 
 breadcrumbs              : false
 words_per_minute         : 160
@@ -120,13 +99,11 @@ atom_feed:
   hide                   : false
   path                   : 
 
-# SEO Related
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
-# Social Sharing
 twitter:
   username               : &twitter
 facebook:
@@ -139,13 +116,11 @@ social:
   name                   : 
   links: 
 
-# Analytics
 analytics:
   provider               : "false"
   google:
     tracking_id          :
 
-# Reading Files
 include:
   - .htaccess
   - _pages
@@ -183,14 +158,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -201,10 +174,12 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# ----------------------------
-# 定義僅需的 Collections：CV, Research, Courses, Notes, Interest
+# Define only the collections you need: cv, research, courses, notes, interest
 collections:
   cv:
+    output: true
+    permalink: /:collection/:path/
+  research:
     output: true
     permalink: /:collection/:path/
   courses:
@@ -213,15 +188,11 @@ collections:
   notes:
     output: true
     permalink: /:collection/:path/
-  research:
-    output: true
-    permalink: /:collection/:path/
   interest:
     output: true
     permalink: /:collection/:path/
 
-# ----------------------------
-# Defaults for pages and collections
+# Set defaults for pages and collections
 defaults:
   - scope:
       path: ""
@@ -237,6 +208,12 @@ defaults:
       author_profile: true
   - scope:
       path: ""
+      type: research
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
       type: courses
     values:
       layout: single
@@ -244,12 +221,6 @@ defaults:
   - scope:
       path: ""
       type: notes
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: research
     values:
       layout: single
       author_profile: true
