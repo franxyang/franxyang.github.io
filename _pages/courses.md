@@ -1,6 +1,8 @@
 ---
-layout: single
+layout: archive
 title: "Courses"
 permalink: /courses/
+author_profile: true
 ---
- Editing...
+
+Editing...
