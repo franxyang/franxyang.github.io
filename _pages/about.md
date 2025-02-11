@@ -13,4 +13,5 @@ Since February 2025, I have had the honor of working as a Research Assistant for
 
 Currently, I am preparing my application to Economics PhD programs for Fall 2026 matriculation.
 
-Feel free to contact me via email at yyang773@wisc.edu :)
+Feel free to contact me via email at [yyang773@wisc.edu](mailto:yyang773@wisc.edu)
+
