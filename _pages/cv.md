@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: true
 ---
 
-[Download my CV(Feb2025)](cv.pdf)
+[Download my CV (currently omitted)]()
 
 
 
