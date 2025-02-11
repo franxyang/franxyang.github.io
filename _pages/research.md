@@ -4,7 +4,6 @@ title: "Research"
 permalink: /research/
 ---
 
-# Research
 
 Below is an overview of my research projects and experience.
 
