@@ -1,160 +1,161 @@
+# _config.yml
 # Welcome to Jekyll!
-#
 # This config file is meant for settings that affect your entire site.
 # If you change this file, please restart the server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default"
-title                    : "Frank Yifan YANG"
-title_separator          : "-"
-name                     : &name "Yifan YANG"
-description              : &description "personal description"
-url                      : https://franxyang.github.io/
-baseurl                  : ""  # e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+locale: "en-US"
+site_theme: "default"
+title: "Frank Yifan YANG"
+title_separator: "-"
+name: "Yifan YANG"
+description: "personal description"
+url: "https://franxyang.github.io/"
+baseurl: ""  # e.g., "/blog"
+repository: "academicpages/academicpages.github.io"
 
 # Site Author
 author:
-  avatar           : "profile2.png"
-  name             : "Frank Yifan YANG"
-  pronouns         : "he/him"  
-  bio              : "Econ&Math&DS@UW-Madison"
-  location         : "Madison, WI"
-  employer         : "University of Wisconsin, Madison"
-  uri              : 
-  email            : 
-  arxiv            : 
-  googlescholar    : 
-  impactstory      : 
-  orcid            : 
-  semantic         : 
-  pubmed           : 
-  researchgate     : 
-  scopus           : 
-  bitbucket        : 
-  codepen          : 
-  dribbble         : 
-  github           : 
-  kaggle           : 
-  stackoverflow    : 
-  bluesky          : 
-  facebook         : 
-  flickr           : 
-  foursquare       : 
-  goodreads        : 
-  google_plus      : 
-  keybase          : 
-  instagram        : 
-  lastfm           : 
-  linkedin         : "linkedin.com/in/yifan-yang-00a74a221"
-  mastodon         : 
-  medium           : 
-  pinterest        : 
-  soundcloud       : 
-  steam            : 
-  telegram         : 
-  tumblr           : 
-  twitter          : "@yangyifan1217"
-  vine             : 
-  weibo            : 
-  wikipedia        : 
-  xing             : 
-  youtube          : 
-  zhihu            : 
+  avatar: "profile2.png"
+  name: "Frank Yifan YANG"
+  pronouns: "he/him"
+  bio: "Econ&Math&DS@UW-Madison"
+  location: "Madison, WI"
+  employer: "University of Wisconsin, Madison"
+  uri:
+  email:
+  arxiv: 
+  googlescholar: 
+  impactstory: 
+  orcid: 
+  semantic: 
+  pubmed: 
+  researchgate: 
+  scopus: 
+  bitbucket: 
+  codepen: 
+  dribbble: 
+  github: 
+  kaggle: 
+  stackoverflow: 
+  bluesky: 
+  facebook: 
+  flickr: 
+  foursquare: 
+  goodreads: 
+  google_plus: 
+  keybase: 
+  instagram: 
+  lastfm: 
+  linkedin: "linkedin.com/in/yifan-yang-00a74a221"
+  mastodon: 
+  medium: 
+  pinterest: 
+  soundcloud: 
+  steam: 
+  telegram: 
+  tumblr: 
+  twitter: "@yangyifan1217"
+  vine: 
+  weibo: 
+  wikipedia: 
+  xing: 
+  youtube: 
+  zhihu: 
 
-teaser                   : 
-breadcrumbs              : false
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled"
-talkmap_link             : false
+teaser: 
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
+talkmap_link: false
+
 comments:
-  provider               : 
+  provider: ""
   disqus:
-    shortname            :
+    shortname: ""
   discourse:
-    server               : 
+    server: ""
   facebook:
-    appid                :
-    num_posts            : 
-    colorscheme          : 
+    appid: ""
+    num_posts: ""
+    colorscheme: ""
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  allowedFields: ['name', 'email', 'url', 'message']
+  branch: "gh-pages"
+  commitMessage: "New comment."
+  filename: "comment-{@timestamp}"
+  format: "yml"
+  moderation: true
+  path: "_data/comments/{options.slug}"
+  requiredFields: ['name', 'email', 'message']
   transforms:
-    email                : "md5"
+    email: "md5"
   generatedFields:
     date:
-      type               : "date"
+      type: "date"
       options:
-        format           : "iso8601"
+        format: "iso8601"
 atom_feed:
-  hide                   : false
-  path                   : 
+  hide: false
+  path: ""
 
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
+google_site_verification: ""
+bing_site_verification: ""
+alexa_site_verification: ""
+yandex_site_verification: ""
 
 twitter:
-  username               : &twitter
+  username: "yourtwitter"
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : 
+  username: ""
+  app_id: ""
+  publisher: ""
+og_image: ""
 social:
-  type                   : 
-  name                   : 
-  links: 
+  type: ""
+  name: ""
+  links: ""
 
 analytics:
-  provider               : "false"
+  provider: "false"
   google:
-    tracking_id          :
+    tracking_id: ""
 
 include:
-  - .htaccess
-  - _pages
-  - files
+  - ".htaccess"
+  - "_pages"
+  - "files"
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .github
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Dockerfile
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - local
-  - log
-  - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
-  - vendor
+  - ".asset-cache"
+  - ".bundle"
+  - ".github"
+  - ".jekyll-assets-cache"
+  - ".sass-cache"
+  - "assets/js/_main.js"
+  - "assets/js/plugins"
+  - "assets/js/vendor"
+  - "CHANGELOG"
+  - "Capfile"
+  - "config"
+  - "Dockerfile"
+  - "Gemfile"
+  - "Gruntfile.js"
+  - "gulpfile.js"
+  - "LICENSE"
+  - "local"
+  - "log"
+  - "node_modules"
+  - "package.json*"
+  - "Rakefile"
+  - "README"
+  - "tmp"
+  - "vendor"
 keep_files:
-  - .git
-  - .svn
+  - ".git"
+  - ".svn"
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
@@ -174,25 +175,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Define only the collections you need: cv, research, courses, notes, interest
-collections:
-  cv:
-    output: true
-    permalink: /:collection/:path/
-  research:
-    output: true
-    permalink: /:collection/:path/
-  courses:
-    output: true
-    permalink: /:collection/:path/
-  notes:
-    output: true
-    permalink: /:collection/:path/
-  interest:
-    output: true
-    permalink: /:collection/:path/
-
-# Set defaults for pages and collections
+# Use defaults for pages only
 defaults:
   - scope:
       path: ""
@@ -200,43 +183,13 @@ defaults:
     values:
       layout: single
       author_profile: true
-  - scope:
-      path: ""
-      type: cv
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: research
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: courses
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: notes
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: interest
-    values:
-      layout: single
-      author_profile: true
 
 sass:
-  sass_dir: _sass
+  sass_dir: "_sass"
   style: compressed
 
-permalink: /:categories/:title/
-timezone: Etc/UTC
+permalink: "/:categories/:title/"
+timezone: "Etc/UTC"
 
 plugins:
   - jekyll-feed
