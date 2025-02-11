@@ -1,7 +1,6 @@
 ---
 permalink: /
-title: "Welcome! \\"
-title: "Hello / 你好"
+title: "Welcome! Hello, 你好！"
 author_profile: true
 redirect_from: 
   - /about/
