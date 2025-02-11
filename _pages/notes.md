@@ -1,7 +1,8 @@
 ---
-layout: single
-title: "Notes"
-permalink: /notes/
+layout: archive
+title: "CV"
+permalink: /cv/
+author_profile: true
 ---
 
 Editing...
