@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 **Welcome!**
-** Hello, 你好！**
+
+**Hello, 你好!**
 
 I am a junior majoring in Economics, Mathematics, and Data Science at the University of Wisconsin-Madison. I transferred from HKUST in 2023 (I am proud of having two years of study there!).
 
