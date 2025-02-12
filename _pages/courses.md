@@ -5,8 +5,6 @@ permalink: /courses/
 author_profile: true
 ---
 
-**Still Under Editing...**
-
 ## Economics
 
 ### UW-Madison
