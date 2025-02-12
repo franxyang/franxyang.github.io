@@ -7,63 +7,64 @@ author_profile: true
 
 **Still Under Editing...**
 
-**Economics**
+## Economics
 
-_**UW-Madison:**_
+### UW-Madison
 
-ECON661
+- **ECON661**: Issues in International Macro (2025Spring)
+- **ECON664**: Issues in International Trade (2024Fall)
+- **ECON475**: Economics of Growth (2023Fall)
+- **ECON580**: Honors-Research Project Design (2024Spring)
+- **ECON711**: Microeconomics Theory Sequence I (2023Fall)
+- **ECON713**: Microeconomics Theory Sequence II (2025Spring)
 
-ECON664
+### HKUST
 
-ECON475
+- **ECON4144**: Health and Education Economics (2023Summer)
+- **ECON3113**: Microeconomic Theory I (2023Spring)
+- **ECON3123**: Macroeconomic Theory I (2022Fall)
+- **ECON3143**: Macroeconomic Theory II (2023Spring)
+- **ECON3334**: Introduction to Econometrics (2022Fall)
 
-ECON580
+---
 
-ECON711
+## Mathematics
 
-ECON713
+### UW-Madison
 
-_**HKUST:**_
+- **MATH521**: Analysis I (2023Fall)
+- **MATH522**: Analysis II (2024Fall)
+- **MATH341**: Linear Algebra (2023Fall)
+- **MATH431**: Intro – Theory of Probability (2024Spring)
+- **MATH541**: Modern Algebra (2024Fall)
+- **MATH535**: Math Methods in Data Science (2025Spring)
 
-ECON4144
+### HKUST
 
-ECON3113
+- **MATH1014**: Calculus II (2022Spring)
+- **MATH2001**: Foundation of Mathematics
+- **MATH2023**: Multivariable Calculus (2022Spring)
+- **MATH2033**: Mathematical Analysis (2022Fall)
+- **MATH2121**: Linear Algebra (2022Spring)
+- **MATH2411**: Applied Statistics (2022Summer)
+- **MATH2511**: Fundamentals of Actuarial Mathematics (2022Fall)
+- **MATH4321**: Game Theory (2023Spring)
 
-ECON3123
+---
 
-ECON3143
+## Coding / Programming / Data Science Related
 
-ECON3334
+### Java
 
-**Mathematics**
+- **COMP SCI 200**: Programming I (2023Fall)
+- **COMP SCI 300**: Programming II (2024Spring)
 
-_**UW-Maidson:**_
+### R / RStudio
 
-MATH521 & 522
+- **STAT 240**: Data Science Modeling I (2024Summer)
+- **STAT 303**: R for Statistics I (2025Spring)
 
-MATH341
+### Python
 
-MATH431
-
-MATH541
-
-_**HKUST:**_
-
-MATH1014
-
-MATH2001
-
-MATH2023
-
-MATH2033
-
-MATH2121
-
-MATH2411
-
-MATH2511
-
-MATH4321
-
-
-**Codeing / Programming / Data Science Related**
+- **COMP SCI 320**: Data Science Programming II (2024Fall)
+- **MATH535**: Math Methods in Data Science (2025Spring)
