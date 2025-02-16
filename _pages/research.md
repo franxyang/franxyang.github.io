@@ -39,8 +39,7 @@ Below is an overview of my research projects and experience.
 **Affiliation:** Department of Economics, UW-Madison
 
 - Digitized and analyzed archival trade records to extract insights on agricultural trade patterns.
-- Developed and refined Python scripts to clean and validate the USIMC dataset obtained via AWS Textract.
-- Created robust routines to preprocess USDA GATS and PS&D data for rigorous econometric analysis.
+- Refined Python scripts to clean and validate the USIMC dataset obtained via AWS Textract.
 
 ---
 
