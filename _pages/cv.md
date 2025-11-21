@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: true
 ---
 
-[Download my CV (currently omitted)]()
+[My Resume](Resume_Yifan_Oct2025.pdf)
 
 
 
