@@ -41,16 +41,18 @@ Below is an overview of my research projects and experience.
 
 - Implemented neural network parameterizations that enforce hard constraints via constraint-aware output activations, turning a constrained PDE-control problem into unconstrained optimization over network weights.
 
-%---
 
-%### U.S. Tariff History Project  
-%**Duration:** *Feb 2024 – Present*  
-%**Role:** Research Assistant (supervised by [Prof. Lydia Cox](https://coxlydia.com/))  
-%**Affiliation:** Department of Economics, UW-Madison
+<!--
+---
 
-%- Digitized and analyzed archival trade records to extract insights on agricultural trade patterns.
-%- Refined Python scripts to clean and validate the USIMC dataset obtained via AWS Textract.
+### U.S. Tariff History Project  
+**Duration:** *Feb 2024 – Present*  
+**Role:** Research Assistant (supervised by [Prof. Lydia Cox](https://coxlydia.com/))  
+**Affiliation:** Department of Economics, UW-Madison
 
+- Digitized and analyzed archival trade records to extract insights on agricultural trade patterns.
+- Refined Python scripts to clean and validate the USIMC dataset obtained via AWS Textract.
+-->
 ---
 
 ### Measure Theory – Directed Reading Program  
