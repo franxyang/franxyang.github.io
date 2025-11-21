@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Research"
+title: "Research Experiences"
 permalink: /research/
 ---
 
@@ -9,7 +9,7 @@ Below is an overview of my research projects and experience.
 
 ---
 
-## Research Projects
+## Independent Study
 
 ### The Effect of the Hong Kong Political Change during 2019 on Trade  
 **Duration:** *Sep 2024 – Dec 2024*  
@@ -31,7 +31,7 @@ Below is an overview of my research projects and experience.
 
 ---
 
-## Research Experience
+## Research Project
 
 
 ### Neural Network Parameterization for PDE-Constrained Optimization
