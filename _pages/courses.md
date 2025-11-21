@@ -5,37 +5,26 @@ permalink: /courses/
 author_profile: true
 ---
 
-## Economics
-
-### UW-Madison
-
-- **ECON661**: Issues in International Macro (2025Spring)
-- **ECON664**: Issues in International Trade (2024Fall)
-- **ECON475**: Economics of Growth (2023Fall)
-- **ECON580**: Honors-Research Project Design (2024Spring)
-- **ECON711**: Microeconomics Theory Sequence I (2023Fall)
-- **ECON713**: Microeconomics Theory Sequence II (2025Spring)
-
-### HKUST
-
-- **ECON4144**: Health and Education Economics (2023Summer)
-- **ECON3113**: Microeconomic Theory I (2023Spring)
-- **ECON3123**: Macroeconomic Theory I (2022Fall)
-- **ECON3143**: Macroeconomic Theory II (2023Spring)
-- **ECON3334**: Introduction to Econometrics (2022Fall)
-
----
-
 ## Mathematics
 
 ### UW-Madison
 
-- **MATH521**: Analysis I (2023Fall)
-- **MATH522**: Analysis II (2024Fall)
+- **MATH521**: **Analysis** I (2023Fall)
+- **MATH522**: **Analysis** II (2024Fall)
 - **MATH341**: Linear Algebra (2023Fall)
 - **MATH431**: Intro – Theory of Probability (2024Spring)
+- **MATH514**: Numerical **Analysis** (2025Fall)
 - **MATH541**: Modern Algebra (2024Fall)
 - **MATH535**: Math Methods in Data Science (2025Spring)
+- **MATH632**: Stochastic **Analysis** (2025Summer)
+- **MATH623**: Complex **Analysis** (2025Fall)
+- **MATH619**: PDE **Analysis** (2025Fall)
+
+Upcoming in _2026Spring_:
+- **MATH567**: Number Theory 
+- **MATH542**: Modern Algebra II
+- **MATH720**: PDE Analysis (PhD Level)
+- **MATH722**: Complex Analysis (PhD Level)
 
 ### HKUST
 
@@ -50,6 +39,29 @@ author_profile: true
 
 ---
 
+## Economics
+
+### UW-Madison
+
+- **ECON661**: Issues in International Macro (2025Spring)
+- **ECON664**: Issues in International Trade (2024Fall)
+- **ECON475**: Economics of Growth (2023Fall)
+- **ECON570**: Fundamentals of Data Analytics for Economists (2025Fall)
+- **ECON580**: Honors-Research Project Design (2024Spring)
+- **ECON711**: Microeconomics Theory Sequence I (2023Fall)
+- **ECON713**: Microeconomics Theory Sequence II (2025Spring)
+
+### HKUST
+
+- **ECON4144**: Health and Education Economics (2023Summer)
+- **ECON3113**: Microeconomic Theory I (2023Spring)
+- **ECON3123**: Macroeconomic Theory I (2022Fall)
+- **ECON3143**: Macroeconomic Theory II (2023Spring)
+- **ECON3334**: Introduction to Econometrics (2022Fall)
+
+
+---
+
 ## Coding / Programming / Data Science Related
 
 ### Java
@@ -60,7 +72,11 @@ author_profile: true
 ### R / RStudio
 
 - **STAT 240**: Data Science Modeling I (2024Summer)
+- **STAT 340**: Data Science Modeling II (2025Fall)
 - **STAT 303**: R for Statistics I (2025Spring)
+- **STAT 304**: R for Statistics II (2025Spring)
+- **STAT 305**: R for Statistics III (2025Spring)
+
 
 ### Python
 
