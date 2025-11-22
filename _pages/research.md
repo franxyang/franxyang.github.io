@@ -21,8 +21,9 @@ Below is an overview of my research projects and experience.
 - Developed a Deep Learning framework (JAX) to solve inverse problems for the Heat Equation, utilizing neural networks to parameterize unknown source terms and regularize the optimization landscape.
 - Engineered an automatic differentiation pipeline combined with the Adjoint Method to compute gradients, achieving a relative $L_2$ error of <1.00% in recovering the true force function after 3000 epochs.
 - Conducted comparative analysis between Vanilla MLPs and Chebyshev-basis networks, optimizing convergence speed and solution accuracy for complex spatiotemporal dynamics.
-<img width="4452" height="1466" alt="solution_spacetime_nn_p1" src="https://github.com/user-attachments/assets/d039daf9-2f8a-49c2-8512-292a87790d34" />
-![f_low_osc](https://github.com/user-attachments/assets/9b412a96-13a9-4b16-838f-788cc04e70cf)
+<img width="4452" height="1400" alt="solution_spacetime_nn_p1" src="https://github.com/user-attachments/assets/97a61695-4996-4d42-afe4-ec5e7f337ea2" />
+<img width="4444" height="1400" alt="force_spacetime_nn_p1" src="https://github.com/user-attachments/assets/e50ad7f5-8abc-4290-be95-11882c9ecfae" />
+
 
 
 ---
