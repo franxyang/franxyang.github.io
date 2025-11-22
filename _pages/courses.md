@@ -63,7 +63,7 @@ Considering:
 
 ---
 
-## Coding / Programming / Data Science Related
+## Programming / Data Science Related
 
 ### Java
 
