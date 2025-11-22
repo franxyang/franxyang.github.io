@@ -10,20 +10,21 @@ author_profile: true
 ### UW-Madison
 
 - **MATH521**: **Analysis** I (2023Fall)
-- **MATH522**: **Analysis** II (2024Fall)
 - **MATH341**: Linear Algebra (2023Fall)
+- **MATH522**: **Analysis** II (2024Fall)
 - **MATH431**: Intro – Theory of Probability (2024Spring)
-- **MATH514**: Numerical **Analysis** (2025Fall)
 - **MATH541**: Modern Algebra (2024Fall)
 - **MATH535**: Math Methods in Data Science (2025Spring)
-- **MATH632**: Stochastic **Analysis** (2025Summer)
+- **MATH632**: Stochastic **Analysis** (2025Summer) 
+- **MATH514**: Numerical **Analysis** (2025Fall)
 - **MATH623**: Complex **Analysis** (2025Fall)
 - **MATH619**: PDE **Analysis** (2025Fall)
 
 Upcoming in _2026Spring_:
 - **MATH567**: Number Theory 
 - **MATH542**: Modern Algebra II
-- **MATH720**: PDE Analysis (PhD Level)
+Considering:
+- **MATH720**: PDE Analysis (PhD Level) 
 - **MATH722**: Complex Analysis (PhD Level)
 
 ### HKUST
@@ -49,7 +50,6 @@ Upcoming in _2026Spring_:
 - **ECON570**: Fundamentals of Data Analytics for Economists (2025Fall)
 - **ECON580**: Honors-Research Project Design (2024Spring)
 - **ECON711**: Microeconomics Theory Sequence I (2023Fall)
-- **ECON713**: Microeconomics Theory Sequence II (2025Spring)
 
 ### HKUST
 
@@ -82,3 +82,4 @@ Upcoming in _2026Spring_:
 
 - **COMP SCI 320**: Data Science Programming II (2024Fall)
 - **MATH535**: Math Methods in Data Science (2025Spring)
+- **ECON570**: Fundamentals of Data Analytics for Economists (2025Fall)
