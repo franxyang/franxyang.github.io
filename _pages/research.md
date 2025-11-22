@@ -15,7 +15,8 @@ Below is an overview of my research projects and experience.
 ### Neural Network Parameterization for PDE-Constrained Optimization
 **Duration:** *Sep 2025 – Present*  
 **Role:** Undergraduate Researcher (supervised by [Prof. Yukun Yue](https://sites.google.com/andrew.cmu.edu/yukunyue/home))  
-**Affiliation:** Madison Experimental Mathematics(MXM) Lab; Department of Mathematics, UW-Madison 
+**Affiliation:** Madison Experimental Mathematics(MXM) Lab; Department of Mathematics, UW-Madison
+
 **Resources:** [ Presentation](https://drive.google.com/file/d/1Bo-Gexe0T9FAVcVra177hl-Ag7V_x3xR/view?usp=sharing)
 
 - Developed a Deep Learning framework (JAX) to solve inverse problems for the Heat Equation, utilizing neural networks to parameterize unknown source terms and regularize the optimization landscape.
