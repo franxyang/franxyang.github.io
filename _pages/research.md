@@ -9,15 +9,30 @@ Below is an overview of my research projects and experience.
 
 ---
 
-## Independent Study
+## Research Experiences
+
+
+### Neural Network Parameterization for PDE-Constrained Optimization
+**Duration:** *Sep 2025 – Present*  
+**Role:** Undergraduate Researcher (supervised by [Prof. Yukun Yue](https://sites.google.com/andrew.cmu.edu/yukunyue/home))  
+**Affiliation:** Madison Experimental Mathematics(MXM) Lab | Department of Mathematics, UW-Madison
+**Resources:** [Presentation](https://drive.google.com/file/d/1Bo-Gexe0T9FAVcVra177hl-Ag7V_x3xR/view?usp=sharing)
+
+- Developed a Deep Learning framework (JAX) to solve inverse problems for the Heat Equation, utilizing neural networks to parameterize unknown source terms and regularize the optimization landscape.
+- Engineered an automatic differentiation pipeline combined with the Adjoint Method to compute gradients, achieving a relative $L_2$ error of <1.00% in recovering the true force function after 3000 epochs.
+- Conducted comparative analysis between Vanilla MLPs and Chebyshev-basis networks, optimizing convergence speed and solution accuracy for complex spatiotemporal dynamics.
+
+---
 
 ### The Effect of the Hong Kong Political Change during 2019 on Trade  
 **Duration:** *Sep 2024 – Dec 2024*  
-**Project Type:** Junior Honor Thesis  
+**Project Type:** Junior Thesis  
 **Advisor:** [Prof. Lydia Cox](https://coxlydia.com/)  
 **Resources:** [Intro Slides](https://uwmadison.box.com/s/q2714o38genhm73xe4xw7wobsq5hcwa9) | [View Here](https://uwmadison.box.com/s/3gkq1n4gnzggwauujf54592rzviexcqe)
 
-- Applied a difference-in-differences approach comparing Hong Kong and Singapore using trade data from 2005–2023 to assess the impact of the 2019 protests and subsequent policy changes.
+- Quantified the impact of the 2019 political protests on Hong Kong’s trade performance relative to Singapore using a Difference-in-Differences (DID) approach on bilateral trade flows (2005–2023).
+- Constructed a comprehensive dataset by merging annual and monthly trade data, performing rigorous cleaning and robustness checks (placebo tests) to address potential multicollinearity.
+- Identified a counter-intuitive positive differential effect post-2019 and performed heterogeneity analysis to attribute this anomaly to increased import substitution from Mainland China.	
 
 ---
 
@@ -27,20 +42,9 @@ Below is an overview of my research projects and experience.
 **Advisor:** [Prof. Simeon Alder](https://users.ssc.wisc.edu/~sdalder/)  
 **Resources:** [View Here](https://uwmadison.box.com/s/e8fkcc4fx6xhqz3qm0lfuhxjmtm56crn)
 
-- Employed OLS and panel data methods to examine the impact of municipal bond issuance on local GDP growth in Chinese prefecture-level cities. The study revealed significant regional variations and diminishing marginal returns.
-
----
-
-## Research Project
-
-
-### Neural Network Parameterization for PDE-Constrained Optimization
-**Duration:** *Sep 2025 – Present*  
-**Role:** Undergraduate Researcher (supervised by [Prof. Yukun Yue](https://sites.google.com/andrew.cmu.edu/yukunyue/home))  
-**Affiliation:** Department of Mathematics, UW-Madison
-
-- Implemented neural network parameterizations that enforce hard constraints via constraint-aware output activations, turning a constrained PDE-control problem into unconstrained optimization over network weights.
-
+- Analyzed the fiscal multiplier effect of bond issuance by compiling a longitudinal panel dataset covering 298 Chinese cities over an 18-year period (2005–2022).
+- Formulated Fixed-Effects regression models to control for unobserved time-invariant heterogeneity and regional disparities between coastal and inland provinces.
+- Uncovered significant diminishing marginal returns of bond issuance on local GDP, providing empirical evidence for the necessity of debt-structure optimization in local government financing.
 
 <!--
 ---
@@ -60,7 +64,8 @@ Below is an overview of my research projects and experience.
 **Role:** Participant  
 **Affiliation:** Department of Mathematics, UW-Madison
 
-- Explored advanced measure theory topics including Lebesgue integration, sigma-algebras, and convergence theorems under the mentorship of a PhD student.
-- Engaged with seminal texts and participated in weekly seminars to deepen my theoretical understanding.
-- Prepared a comprehensive research proposal and delivered a final presentation summarizing key insights and potential applications.
+- Engaged in a rigorous proof-based study of Real Analysis, mastering concepts beyond the standard curriculum including Lebesgue integration, $\sigma$-algebras, and properties of $L^p$ spaces.
+- Analyzed critical convergence results (Monotone and Dominated Convergence Theorems) to rigorously distinguish the theoretical advantages of Lebesgue measure over Riemann integration in limit processes.
+- Synthesized complex theoretical proofs into a final expository presentation, demonstrating the ability to deconstruct and communicate abstract mathematical concepts to professional audiences.
+
 
