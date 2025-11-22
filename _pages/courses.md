@@ -23,6 +23,7 @@ author_profile: true
 Upcoming in _2026Spring_:
 - **MATH567**: Number Theory 
 - **MATH542**: Modern Algebra II
+
 Considering:
 - **MATH720**: PDE Analysis (PhD Level) 
 - **MATH722**: Complex Analysis (PhD Level)
