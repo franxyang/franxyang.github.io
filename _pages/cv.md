@@ -5,7 +5,4 @@ permalink: /cv/
 author_profile: true
 ---
 
-You can find my Resume[ here](Resume_Yifan_Oct2025.pdf), and my CV[ here](CV_Yifan_Oct2025.pdf)
-
-
-
+You can find my Resume [here](https://drive.google.com/file/d/1Y4UpFjJPr6Iybwp2czoiGwJbTVZurl1R/view?usp=sharing)
