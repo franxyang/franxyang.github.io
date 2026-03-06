@@ -20,13 +20,11 @@ author_profile: true
 - **MATH623**: Complex **Analysis** (2025Fall)
 - **MATH619**: PDE **Analysis** (2025Fall)
 
-Upcoming in _2026Spring_:
+Currently Taking in _2026Spring_:
 - **MATH567**: Number Theory 
 - **MATH542**: Modern Algebra II
-
-Considering:
-- **MATH720**: PDE Analysis (PhD Level) 
-- **MATH722**: Complex Analysis (PhD Level)
+- **MATH716**: Randomized Linear Algebra and its Application
+- **MATH718**: ODE
 
 ### HKUST
 
@@ -38,6 +36,28 @@ Considering:
 - **MATH2411**: Applied Statistics (2022Summer)
 - **MATH2511**: Fundamentals of Actuarial Mathematics (2022Fall)
 - **MATH4321**: Game Theory (2023Spring)
+
+---
+## Programming / Data Science Related
+
+### Python
+
+- **COMP SCI 320**: Data Science Programming II (2024Fall)
+- **MATH535**: Math Methods in Data Science (2025Spring)
+- **ECON570**: Fundamentals of Data Analytics for Economists (2025Fall)
+
+### Java
+
+- **COMP SCI 200**: Programming I (2023Fall)
+- **COMP SCI 300**: Programming II (2024Spring)
+
+### R / RStudio
+
+- **STAT 240**: Data Science Modeling I (2024Summer)
+- **STAT 340**: Data Science Modeling II (2025Fall)
+- **STAT 303**: R for Statistics I (2025Spring)
+- **STAT 304**: R for Statistics II (2025Spring)
+- **STAT 305**: R for Statistics III (2025Spring)
 
 ---
 
@@ -61,26 +81,5 @@ Considering:
 - **ECON3334**: Introduction to Econometrics (2022Fall)
 
 
----
-
-## Programming / Data Science Related
-
-### Java
-
-- **COMP SCI 200**: Programming I (2023Fall)
-- **COMP SCI 300**: Programming II (2024Spring)
-
-### R / RStudio
-
-- **STAT 240**: Data Science Modeling I (2024Summer)
-- **STAT 340**: Data Science Modeling II (2025Fall)
-- **STAT 303**: R for Statistics I (2025Spring)
-- **STAT 304**: R for Statistics II (2025Spring)
-- **STAT 305**: R for Statistics III (2025Spring)
 
 
-### Python
-
-- **COMP SCI 320**: Data Science Programming II (2024Fall)
-- **MATH535**: Math Methods in Data Science (2025Spring)
-- **ECON570**: Fundamentals of Data Analytics for Economists (2025Fall)
