@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Modeling Cognitive Load as an Instructional Partitioning Problem</title>
 <style>
-  /* minimal reset for standalone view (no Jekyll theme chrome) */
   html, body { margin: 0; padding: 0; }
   body { background: #f2ede3; }
-  /* neutralize Jekyll-only selectors so they no-op in standalone */
   .page__title, .page__content { all: unset; display: contents; }
 </style>
 
@@ -41,16 +39,49 @@
     background: var(--cl-bg);
     color: var(--cl-ink);
     font-family: "Newsreader", "Iowan Old Style", Georgia, serif;
-    font-size: 18px;
-    line-height: 1.62;
+    font-size: 19px;
+    line-height: 1.68;
     margin: 0;
     padding: 0;
   }
 
+  /* Ornamental section divider — appears between sections via CSS, no HTML edit needed */
+  .cl-article > section + section::before {
+    color: var(--cl-line);
+    content: "✻";
+    display: block;
+    font-size: 18px;
+    margin: 0 auto 48px;
+    text-align: center;
+    width: fit-content;
+  }
+
+  /* Pull-quote: large, centered, with rules above and below */
+  .cl-pullquote {
+    border-bottom: 1px solid var(--cl-line);
+    border-top: 1px solid var(--cl-line);
+    color: var(--cl-red-dark);
+    font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
+    font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+    font-style: italic;
+    font-weight: 460;
+    letter-spacing: -0.005em;
+    line-height: 1.18;
+    margin: 56px auto !important;
+    max-width: 760px !important;
+    padding: 40px 28px !important;
+    text-align: center;
+  }
+
+  .cl-pullquote::before { content: "" "; opacity: 0.4; }
+  .cl-pullquote::after { content: " ""; opacity: 0.4; }
+
   .cl-article * { box-sizing: border-box; }
 
-  .cl-article[data-lang="en"] .lang-zh { display: none !important; }
-  .cl-article[data-lang="zh"] .lang-en { display: none !important; }
+  /* Language toggle scoped at <html> level so it covers both the topbar and the article body */
+  html[data-lang="en"] .lang-zh,
+  html:not([data-lang="zh"]) .lang-zh { display: none !important; }
+  html[data-lang="zh"] .lang-en { display: none !important; }
 
   /* ---------- top bar ---------- */
   .cl-topbar {
@@ -115,79 +146,58 @@
     max-width: 1100px;
   }
 
-  /* ---------- hero ---------- */
+  /* ---------- hero (minimal: title only + tiny kicker) ---------- */
   .cl-hero {
     border-bottom: 1px solid var(--cl-line);
-    padding-top: 72px !important;
-    padding-bottom: 64px !important;
+    padding-top: 96px !important;
+    padding-bottom: 80px !important;
+    text-align: left;
   }
 
-  .cl-eyebrow {
-    color: var(--cl-red);
+  .cl-kicker {
+    color: var(--cl-muted);
     font-family: "JetBrains Mono", "SF Mono", Menlo, monospace;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    margin: 0 0 16px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    margin: 0 0 28px;
     text-transform: uppercase;
   }
 
   .cl-hero h1 {
     color: var(--cl-ink);
     font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
-    font-size: clamp(2.2rem, 4.4vw, 3.4rem);
-    font-weight: 480;
-    letter-spacing: -0.005em;
-    line-height: 1.04;
+    font-size: clamp(2.4rem, 5.6vw, 4.6rem);
+    font-weight: 460;
+    letter-spacing: -0.012em;
+    line-height: 0.98;
+    margin: 0;
+    max-width: 18ch;
+  }
+
+  /* ---------- lede with drop cap ---------- */
+  .cl-lede {
+    border-bottom: 1px solid var(--cl-line);
+    padding: 64px 28px !important;
+  }
+
+  .cl-lede p {
+    font-family: "Newsreader", "Iowan Old Style", Georgia, serif;
+    font-size: clamp(1.18rem, 1.7vw, 1.42rem);
+    line-height: 1.55;
     margin: 0;
   }
 
-  .cl-hero .cl-dek {
-    color: var(--cl-red-dark);
-    font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
-    font-size: clamp(1.05rem, 1.6vw, 1.3rem);
-    font-weight: 600;
-    line-height: 1.32;
-    margin: 26px 0 32px;
-    max-width: 760px;
-  }
-
-  .cl-hero .cl-byline {
-    color: var(--cl-muted);
-    font-family: "JetBrains Mono", "SF Mono", Menlo, monospace;
-    font-size: 12px;
-    letter-spacing: 0.06em;
-  }
-
-  .cl-hero-rule {
-    background: linear-gradient(90deg, var(--cl-red), var(--cl-teal));
-    height: 6px;
-    margin: 22px 0 0;
-    width: 360px;
-  }
-
-  .cl-hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 32px;
-  }
-
-  .cl-hero-actions a {
-    border: 1px solid var(--cl-red);
+  .dropcap {
     color: var(--cl-red);
-    font-family: "JetBrains Mono", "SF Mono", Menlo, monospace;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    padding: 10px 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .cl-hero-actions a:first-child {
-    background: var(--cl-red);
-    color: var(--cl-bg);
+    float: left;
+    font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
+    font-size: 5.4em;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    line-height: 0.84;
+    margin: 0.04em 0.08em 0 -0.04em;
+    padding-top: 0.04em;
   }
 
   /* ---------- section heading ---------- */
@@ -218,9 +228,28 @@
   }
 
   .cl-article .lead {
+    color: var(--cl-ink);
     font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
-    font-size: clamp(1.18rem, 1.8vw, 1.42rem);
-    line-height: 1.32;
+    font-size: clamp(1.22rem, 2vw, 1.55rem);
+    font-weight: 460;
+    letter-spacing: -0.005em;
+    line-height: 1.26;
+    margin-bottom: 24px;
+  }
+
+  /* Editorial prose paragraphs (essay body) */
+  .cl-article .cl-prose {
+    color: var(--cl-ink);
+    font-family: "Newsreader", "Iowan Old Style", Georgia, serif;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    margin: 0 0 32px;
+    max-width: 68ch;
+  }
+
+  .cl-article .cl-prose em {
+    color: var(--cl-red-dark);
+    font-style: italic;
   }
 
   /* ---------- known: 4-step strip ---------- */
@@ -735,32 +764,27 @@
 <article class="cl-article" id="cl-article" data-lang="en">
 
 <header class="cl-hero">
-  <p class="cl-eyebrow">EDPS 506 · Spring 2026</p>
+  <p class="cl-kicker"><span class="lang-en">An essay · April 2026</span><span class="lang-zh">一篇随笔 · 2026 年 4 月</span></p>
   <h1>
     <span class="lang-en">Modeling Cognitive Load as an Instructional Partitioning Problem</span>
     <span class="lang-zh">把认知负荷建模为一个教学切分问题</span>
   </h1>
-  <p class="cl-dek">
-    <span class="lang-en">A theory-first proposal on segmentation, coherence, and working-memory constraints.</span>
-    <span class="lang-zh">一份以理论为先的提案：关于切分、连贯性，以及工作记忆的容量限制。</span>
-  </p>
-  <div class="cl-hero-rule"></div>
-  <p class="cl-byline" style="margin-top: 18px;">Yifan Yang · EDPS 506 · Spring 2026</p>
-  <div class="cl-hero-actions">
-    <a href="index.html">
-      <span class="lang-en">Browser slides</span><span class="lang-zh">浏览器幻灯片</span>
-    </a>
-    <a href="proposal-slides.pdf">
-      <span class="lang-en">PDF fallback</span><span class="lang-zh">PDF 备份</span>
-    </a>
-  </div>
 </header>
+
+<section class="cl-lede">
+  <p class="lang-en"><span class="dropcap">H</span>ow much should we break learning material into chunks? Half a century of cognitive load research has built a careful answer to <em>whether</em> segmentation matters — but very little of that work tells us <em>how much</em> is the right amount for a given piece of content. When you try to make the answer precise, the problem starts to look a lot like a constrained optimization. This essay walks through what that problem looks like, and why getting it right matters for the way we design instruction.</p>
+  <p class="lang-zh"><span class="dropcap">学</span>习材料应该被切到多碎？半个世纪的认知负荷研究在"<em>是否</em>需要切分"这件事上累积了相当扎实的答案，却几乎没告诉我们对一段具体的材料"<em>切到多细才合适</em>"。当你试图把这个问题写清楚，它会非常像一个约束优化问题。这篇随笔尝试把这个问题、以及它对教学设计意味着什么，讲明白。</p>
+</section>
 
 <section id="known" class="wide">
   <h2><span class="lang-en">Known</span><span class="lang-zh">已知</span></h2>
   <p class="lead">
     <span class="lang-en">The literature already gives us a strong chain of claims.</span>
     <span class="lang-zh">文献里已经有一条相当扎实的主张链。</span>
+  </p>
+  <p class="cl-prose">
+    <span class="lang-en">Working memory is bounded — that is the foundational fact, going back to Baddeley's 1992 review of capacity and manipulation. Sweller's cognitive load theory then carved that bounded resource into pieces, distinguishing the cost imposed by the structure of the material itself from the cost imposed by how the material happens to be presented. More recent work has refined the picture twice over: Chen, Paas, and Sweller argued that what really drives intrinsic difficulty is <em>element interactivity</em> — how many pieces have to be coordinated in mind at once — not raw item count; and resource-rational accounts in working-memory neuroscience have begun to treat capacity itself as a graded budget that can be allocated unevenly and that runs out, rather than as a small fixed slot count. Together, the four ideas line up:</span>
+    <span class="lang-zh">工作记忆是有限的——这是底层事实，可以追溯到 Baddeley 1992 年关于容量与操作的综述。Sweller 的认知负荷理论随后把这个有限资源切开了：它区分了"材料本身结构带来的成本"和"呈现方式带来的成本"。更近期的工作又把图景细化了两次：Chen、Paas 和 Sweller 指出，决定内在难度的其实是<em>元素之间的交互</em>——同时要在心里协调多少东西——而不是元素数量本身；而工作记忆神经科学里的"资源理性"路径，开始把容量本身看作一个可以被不均匀分配、并且会被耗尽的预算，而不是几个固定槽。这四个想法连起来就是：</span>
   </p>
   <div class="cl-known-grid">
     <div class="cl-step">
@@ -795,6 +819,10 @@
   <p class="lead">
     <span class="lang-en">The missing piece is not whether load matters. It is how instructional structure becomes a prediction.</span>
     <span class="lang-zh">缺的不是"负荷是否重要"——这件事文献里已经清楚了。缺的是"教学结构如何变成一个可预测的命题"。</span>
+  </p>
+  <p class="cl-prose">
+    <span class="lang-en">If you ask cognitive load theory whether load matters, it has a careful, well-validated answer. If you ask it <em>how</em> a particular piece of content's structure ought to be cut into segments, the theory mostly defers to design heuristics. The verbal account points at the right intuitions — element interactivity, prior knowledge, signaling — but it does not give us a way to write a partition down, weigh its trade-offs, and ask whether one cut is better than another. The gap, in other words, is narrow but precise: not a missing field, but a missing object — the partition itself, treated as something that can be optimized.</span>
+    <span class="lang-zh">如果你问认知负荷理论"负荷重不重要"，它有一个谨慎而被反复验证的答案。如果你问它"<em>应该</em>把这段内容切成几段、怎么切"，它大多数时候会把答案推给设计启发式。口头的解释指向正确的直觉——元素交互性、先验知识、信号化——但它没有给我们一种把切分写下来、衡量取舍、然后问"这一刀比那一刀好不好"的方式。所以缺口很窄、但很具体：缺的不是一整个领域，而是<em>切分</em>这个对象本身——把它当作一个可以被优化的东西。</span>
   </p>
   <div class="cl-gap-grid">
     <div class="cl-gap-item">
@@ -834,6 +862,11 @@
     <span class="lang-en">The model asks: <strong>how much should material be segmented before the cost of fragmentation exceeds the benefit of local relief?</strong></span>
     <span class="lang-zh">模型问的是：<strong>材料应该切到多细，才能让"碎片化的代价"和"局部减负的好处"达到最佳的平衡？</strong></span>
   </p>
+</section>
+
+<section class="cl-pullquote">
+  <span class="lang-en">Good design isn't pushing as far as you can in one direction. Good design is tractable segments plus preserved structure.</span>
+  <span class="lang-zh">好的设计不是在某一个方向上推到极致；好的设计是<em>可处理的片段</em>加上<em>被保留的结构</em>。</span>
 </section>
 
 <section id="core-tension">
@@ -1191,18 +1224,20 @@
     var over = document.getElementById("cl-digits-over");
     var newBtn = document.getElementById("cl-new-digits");
 
+    function applyLang(value) {
+      article.dataset.lang = value;
+      document.documentElement.dataset.lang = value;
+      document.documentElement.lang = value === "zh" ? "zh-CN" : "en";
+    }
+
     try {
       var saved = localStorage.getItem(KEY);
-      if (saved === "zh" || saved === "en") {
-        article.dataset.lang = saved;
-        document.documentElement.lang = saved === "zh" ? "zh-CN" : "en";
-      }
-    } catch (e) {}
+      applyLang(saved === "zh" ? "zh" : "en");
+    } catch (e) { applyLang("en"); }
 
     btn.addEventListener("click", function () {
-      var next = article.dataset.lang === "en" ? "zh" : "en";
-      article.dataset.lang = next;
-      document.documentElement.lang = next === "zh" ? "zh-CN" : "en";
+      var next = (document.documentElement.dataset.lang === "en") ? "zh" : "en";
+      applyLang(next);
       try { localStorage.setItem(KEY, next); } catch (e) {}
     });
 
