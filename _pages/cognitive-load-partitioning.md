@@ -69,8 +69,7 @@ classes: wide
     text-align: center;
   }
 
-  .cl-pullquote::before { content: "" "; opacity: 0.4; }
-  .cl-pullquote::after { content: " ""; opacity: 0.4; }
+  /* quote glyphs intentionally omitted — the rules above carry the visual weight */
 
   .cl-article * { box-sizing: border-box; }
 
